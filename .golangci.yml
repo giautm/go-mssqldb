@@ -2,9 +2,8 @@ version: "2"
 linters:
   enable:
     # basic go linters
-    - gofmt
-    - golint
     - govet
+    - revive # replacing golint as it is deprecated
 
     # sql related linters
     - rowserrcheck
